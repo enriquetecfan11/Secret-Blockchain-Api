@@ -12,7 +12,7 @@ Este bloque tiene los siguientes campos:
 
 
 ## Cosas para hacer
-- [ ] Crear la estructura de carpetas y archivos
+- [x] Crear la estructura de carpetas y archivos
 - [ ] Dicha estructura de carpetas y archivos documentarla
 - [ ] Crear una base de datos para guardar bloques, datos y usuarios
 - [ ] Terminar de documentar el API

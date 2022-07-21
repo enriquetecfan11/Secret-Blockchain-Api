@@ -1,18 +1,12 @@
-const Blockchain = require("./src/blockchain");
-const Block = require("./src/block");
+const express = require("express");
+const helmet = require("helmet");
 
-async function run() {
-  const blockchain = await new Blockchain();
-  const block1 = new Block({ data: "Block #1" });
-  await blockchain.addBlock(block1);
-  const block2 = new Block({ data: "Block #2" });
-  await blockchain.addBlock(block2);
-  const block3 = new Block({ data: "Block #3" });
-  await blockchain.addBlock(block3);
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-  blockchain.print();
-}
+app.use(express.json());
+app.use(helmet());
 
-run();
-
-
+app.listen(PORT, () => {
+  console.log(`🚀 Server listening on port ${PORT}`);
+});
