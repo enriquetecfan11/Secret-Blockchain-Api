@@ -5,85 +5,45 @@ const istWorks = (req, res) => {
 }
 
 const getAllBlocks = (req, res) => {
-    apiService.getAllBlocks()
-        .then(blocks => {
-            res.json(blocks);
-            res.sendStatus(200);
-
-        })
-        .catch(err => {
-            res.json(err);
-            res.sendStatus(200);
-
-        }
-        );
 }
 
+
 const createBlock = (req, res) => {
-    apiService.createBlock(req.body)
-        .then(block => {
-            res.json(block);
-            res.sendStatus(200);
-        }
-        )
-        .catch(err => {
-            res.json(err);
-        }
-        );
+    const id = req.body.id;
+    const data = req.body.data;
+    const hash = req.body.hash;
+
+    const body = req.body;
+
+    const newBlock = {
+        id: body.id,
+        data: body.data,
+        hash: body.hash,
+        previousHash: body.previousHash,
+        timestamp: body.timestamp,
+        nonce: body.nonce
+    }
+
+    // Send status code 200 to indicate success
+    const insertedBlock = apiService.createBlock(newBlock);
+    res.status(201).send({status: "Ok", data: insertedBlock});
+
+
 }
 
 const getOneBlock = (req, res) => {
-    apiService.getOneBlock(req.params.id)
-        .then(block => {
-            res.json(block);
-            res.sendStatus(200);
-
-        }
-        )
-        .catch(err => {
-            res.json(err);
-        }
-        );
 }
 
 const deleteBlock = (req, res) => {
-    apiService.deleteBlock(req.params.id)
-        .then(block => {
-            res.json(block);
-        }
-        )
-        .catch(err => {
-            res.json(err);
-        }
-        );
+
 }
 
 
 const deleteAllBlocks = (req, res) => {
-    apiService.deleteAllBlocks()
-        .then(block => {
-            res.json(block);
-            res.sendStatus(200);
-
-        }
-        )
-        .catch(err => {
-            res.json(err);
-        }
-        );
 }
 
 const updateBlock = (req, res) => {
-    apiService.updateBlock(req.params.id, req.body)
-        .then(block => {
-            res.json(block);
-            res.sendStatus(200);
-        }
-        )
-        .catch(err => {
-            res.json(err);
-        }
-        );
+
 }
 
 module.exports = {
