@@ -1,26 +1,83 @@
-## Secret Blockchain API
-### Resumen del proyecto
+</div>
 
-En el servidor llamas a un endpoint con formato post:  createblock y un bloque con la informacion del bloque.
+<h1 align="center">Secret Blockchain API</h1>
 
-Este bloque tiene los siguientes campos:
-- Hash del bloque
-- Altura del bloque
-- Timestamp del bloque
-- Data del bloque
-- Hash del bloque anterior
+<h4 align="center"> 
+	🚧  Blockchainjs 🚀 Under construction...  🚧
+</h4> 
+
+<hr>
+
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/enriquetecfan11/blockchainjs?color=56BEB8">
+
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/enriquetecfan11/blockchainjs?color=56BEB8">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/enriquetecfan11/blockchainjs?color=56BEB8">
+
+  <img alt="License" src="https://img.shields.io/github/license/enriquetecfan11/blockchainjs?color=56BEB8">
+
+</p>
+
+<!-- Status -->
+
+## :dart: About ##
 
 
-## Cosas para hacer
-- [x] Crear la estructura de carpetas y archivos
-- [ ] Dicha estructura de carpetas y archivos documentarla
-- [ ] Crear una base de datos para guardar bloques, datos y usuarios
-- [ ] Terminar de documentar el API
-- [ ] Crear un docker para el servidor
-- [ ] Dejar todo preparado para poder subirlo a heroku
+On the server you call an endpoint with post format: createblock and a block with the block information.
 
-## En un futuro
-- [ ] Hacer una pagina web para que los usuarios puedan ver los bloques
-- [ ] Hacer una pagina web para que los usuarios puedan ver los datos
-- [ ] Hacer una pagina web para que los usuarios puedan ver los usuarios
+This block has the following fields:
+- Hash of the block
+- Block height
+- Block timestamp
+- Block data
+- Hash of the previous block
 
+## :sparkles: ToDo ##
+
+### Things to do
+- [x] Create the folder and file structure.
+- [ ] Document such folder and file structure
+- [ ] Create a database to store blocks, data and users
+- [ ] Finish documenting the API
+- [ ] Create a docker for the server
+- [ ] Leave everything ready to upload to heroku
+
+### In the future
+- [ ] Make a web page for the users to see the blocks
+- [ ] Make a web page for the users to see the data
+- [ ] Make a web page so that the users can see the users
+
+## :rocket: Technologies ##
+
+The following tools were used in this project:
+
+- [Node.js](https://nodejs.org/en/)
+
+## :checkered_flag: Starting ##
+
+```bash
+# Clone this project
+$ git clone https://github.com/enriquetecfan11/blockchainjs
+
+# Access
+$ cd blockchainjs
+
+# Install dependencies
+$ npm install
+
+# Run the project normal mode
+$ npm start
+
+# Run the project developer mode
+$ npm run dev
+
+# The server will initialize in the <http://localhost:3000>
+```
+
+## :memo: License ##
+
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+
+
+Made with :heart: by <a href="https://github.com/enriquetecfan11" target="_blank">Enrique Rodriguez</a>
