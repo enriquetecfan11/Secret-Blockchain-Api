@@ -3,19 +3,19 @@
 <h1 align="center">Secret Blockchain API</h1>
 
 <h4 align="center"> 
-	🚧  Blockchainjs 🚀 Under construction...  🚧
+	🚧  Secret Blockchain API 🚀 Under construction...  🚧
 </h4> 
 
 <hr>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/enriquetecfan11/blockchainjs?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/enriquetecfan11/Secret-Blockchain-Api?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/enriquetecfan11/blockchainjs?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/enriquetecfan11/Secret-Blockchain-Api?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/enriquetecfan11/blockchainjs?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/enriquetecfan11/Secret-Blockchain-Api?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/enriquetecfan11/blockchainjs?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/enriquetecfan11/Secret-Blockchain-Api?color=56BEB8">
 
 </p>
 
@@ -23,6 +23,9 @@
 
 ## :dart: About ##
 
+This project is a test how BlockChain works
+
+I made for learn Web3
 
 On the server you call an endpoint with post format: createblock and a block with the block information.
 
@@ -58,7 +61,7 @@ The following tools were used in this project:
 
 ```bash
 # Clone this project
-$ git clone https://github.com/enriquetecfan11/blockchainjs
+$ git clone https://github.com/enriquetecfan11/Secret-Blockchain-Api
 
 # Access
 $ cd blockchainjs
